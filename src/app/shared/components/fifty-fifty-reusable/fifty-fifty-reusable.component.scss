@@ -1,0 +1,108 @@
+#fifty_fifty {
+  .hero-content {
+    .first-paragraph {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    .hero-heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 3rem;
+    }
+
+    .second-paragraph {
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #progress-bars {
+      .progressBar-container {
+        .heading-style-h5 {
+          color: #171d2f;
+        }
+
+        .progress-bar {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* THEME VARIANTS */
+#fifty_fifty.dark {
+  background-color: #1f2e4b;
+
+  .hero-content {
+    .first-paragraph {
+      color: #bde162;
+    }
+
+    .hero-heading {
+      color: white;
+    }
+
+    .second-paragraph {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+}
+
+#fifty_fifty.light {
+  background-color: #edf0f6;
+
+  .hero-content {
+    .first-paragraph {
+      opacity: 0.6;
+    }
+
+    .second-paragraph {
+      opacity: 0.6;
+    }
+  }
+}
+
+#fifty_fifty.white {
+  background-color: white;
+
+  .hero-content {
+    .first-paragraph {
+      opacity: 0.8;
+    }
+
+    .second-paragraph {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #fifty_fifty {
+
+
+        .first-paragraph {
+            font-size: 1rem;
+        }
+
+        .hero-content {
+            .hero-heading {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            .second-paragraph {
+                font-size: .875rem;
+            }
+
+        }
+    }
+}

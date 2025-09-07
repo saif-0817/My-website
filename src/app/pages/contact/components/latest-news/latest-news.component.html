@@ -1,0 +1,32 @@
+<div class="section" style="background-color: #edf0f6;">
+    <div class="row gx-5">
+        <div class="col-12 col-lg-6">
+            <p class="top-title text-lighter pb-md-0">Location</p>
+            <h2 class="heading-style-h2">Our Working Location</h2>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="mb-0 mb-lg-5"></div>
+            <p class="title-description text-lighter">
+                Discover where we operate and how we can serve you. Our locations offer personalized support.
+            </p>
+        </div>
+    </div>
+
+   <div class="row row-cols-1 row-cols-md-3 g-5 mt-3">
+  @for (post of postList; track $index) {
+    <div class="col">
+      <div class="card h-100 rounded-0">
+        <img [src]="post.img" class="card-img-top rounded-0" [alt]="post.id">
+        <div class="card-body">
+          <h5 class="heading-style-h4 mb-3">{{post.country}}</h5>
+          <p class="text-lighter card-address title-description">{{post.address}}</p>
+          <a class="card-email d-block text-lighter mb-3 title-description" [href]="'mailto:' + post.email">{{post.email}}</a>
+          <a class="card-phone text-decoration-none d-block text-lighter title-description" [href]="'tel:' + post.call">{{post.phoneNo}}</a>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+
+</div>

@@ -1,1 +1,224 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+
+body {
+    color: #333;
+    background-color: #fff;
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section {
+    overflow: hidden;
+    padding: 5rem 13rem 3.5rem;
+}
+
+
+.text-lighter {
+    opacity: .6;
+    color: #171d2f;
+}
+
+.text-darker {
+    color: #bde162;
+}
+
+.title-small.is-neon {
+    color: #bde162;
+
+}
+
+.top-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.big-title {
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.title-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading-style-h2 {
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.heading-style-h3 {
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+.heading-style-h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.heading-style-h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.paragraph-small {
+    color: rgb(23, 29, 47);
+    font-size: .875rem;
+    line-height: 1.25;
+}
+
+.knowMore-button {
+
+    text-align: center;
+
+    padding: .875rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    transition: border-color .4s, color .4s, background-color .4s;
+    border-radius: 0;
+}
+
+.button-dark {
+    background-color: #1f2e4b;
+    color: white;
+    border: 2px solid white;
+}
+
+.button-light {
+    background-color: #bde162;
+    color: #1f2e4b;
+    border: 2px solid #bde162;
+}
+
+.knowMore-button.button-light:hover {
+    background-color: #1f2e4b;
+    border: 2px solid #bde162;
+    color: #bde162;
+}
+
+.knowMore-button.button-dark:hover {
+    background-color: #bde162;
+    border: 2px solid #1f2e4b;
+    color: #1f2e4b;
+}
+
+@media screen and (max-width: 479px) {
+    .navbar-toggler-icon {
+        height: 1em !important;
+        width: 1em !important;
+    }
+
+
+    .button,
+    .allServiceLink {
+        font-size: .875rem !important;
+        line-height: 1.25rem !important;
+    }
+
+    .title-description {
+        font-size: .875rem;
+        line-height: 1.3rem !important;
+        margin-top: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    .heading-style-h3 {
+        padding-bottom: .5rem;
+        padding-left: 0;
+        padding-right: 1rem;
+
+    }
+
+    .top-title {
+        font-size: 1rem;
+        padding-bottom: 0;
+
+    }
+
+    .big-title {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .big-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .small-title {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    .title-description {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .heading-style-h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .heading-style-h3 {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
+
+    .heading-style-h4 {
+        font-size: 1.2rem;
+    }
+
+    .heading-style-h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+    }
+
+    .button {
+        padding: .625rem 1.25rem !important;
+    }
+
+    .section {
+        padding: 1rem 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .section {
+        padding: 2rem .5rem;
+    }
+
+}

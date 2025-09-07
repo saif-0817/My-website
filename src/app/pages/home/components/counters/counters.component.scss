@@ -1,0 +1,26 @@
+.counter-title {
+    font-size: 3.9rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+}
+
+.counter-text {
+    opacity: .5;
+    letter-spacing: -1px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+    .counter-title {
+        margin-bottom: .625rem;
+        line-height: 1.5rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    .counter-text {
+        font-size: .88rem;
+        line-height: 1.13rem;
+    }
+}

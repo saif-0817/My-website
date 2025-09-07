@@ -1,0 +1,31 @@
+<div id="testimonial" class="section">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-template carouselSlide *ngFor="let car of carouselItems">
+                <div class="card border-0 rounded-0 p-2 p-md-5 ">
+                    <div class="row gx-md-1 gx-lg-2 gx-xl-5">
+                        <div class="col-12 col-lg-5 col-md-6">
+                            <img src={{car.image}} class="img-fluid rounded-0 h-100 w-100" alt={{car.name}}>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-6">
+                            <div class="card-body  h-100">
+                                <div class="d-flex flex-column justify-content-center h-100 position-relative">
+                                    <h2 class="big-title">{{car.title}}</h2>
+                                    <p class="card-testimonial-description text-lighter">{{car.description}}</p>
+                                    <h5 class="heading-style-h5">{{car.name}}</h5>
+                                    <p class="paragraph-small text-lighter">
+                                        {{car.desiganation}}
+                                    </p>
+                                    <img src="images/quotes.svg" alt="qoutes" class="position-absolute bottom-0 qoutes">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

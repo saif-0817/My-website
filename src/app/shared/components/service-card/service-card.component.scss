@@ -1,0 +1,82 @@
+.card-main-description {
+    font-size: 1.1rem;
+    opacity: .6;
+    line-height: 1.5rem;
+
+}
+
+.card-testimonial-description {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.details-btn {
+    border: 2px solid #edf0f6;
+    font-size: 1.125rem;
+}
+.svg-blue {
+    display: block;
+}
+
+.svg-grey {
+    display: none;
+}
+
+
+.service-offers:hover .svg-grey {
+    display: block;
+}
+
+.service-offers:hover .svg-blue {
+    display: none;
+}
+
+
+
+.service-offers:hover {
+    background-color: #171d2f;
+    color: white;
+    transition: 1s background ease-in-out;
+}
+
+.card-footer {
+    background-color: #fff !important;
+    border: #fff !important;
+}
+
+.service-offers:hover .card-footer {
+    background-color: #171d2f !important;
+    border: #171d2f !important;
+    transition: 1s background ease-in-out;
+
+}
+
+.service-offers:hover .details-btn {
+    color: #171d2f;
+    background-color: #bde162;
+    border-color: #bde162;
+}
+
+
+
+.service-offers:hover .offer-title {
+    color: white;
+}
+
+.service-offers:hover .card-main-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .card-testimonial-description {
+        font-size: .875rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+}

@@ -1,0 +1,20 @@
+<div class="section" style="background-color: #edf0f6;">
+    <div class="text-center mb-4">
+<p class="top-title text-lighter">TEAM</p>
+<h2 class="big-title">Meet Our Experts</h2>
+</div>
+
+<div class="row row-cols-2 row-cols-md-4 g-md-4 g-1">
+    @for (expert of experts; track $index) {
+  <div class="col">
+    <div class="card border border-0 rounded-0">
+      <img src={{expert.image}} class="card-img-top rounded-0" alt={{expert.name}}>
+      <div class="card-body text-center">
+        <h5 class="card-title expert-name">{{expert.name}}</h5>
+        <p class="card-text text-lighter field my-2">{{expert.field}}</p>
+      </div>
+    </div>
+  </div>
+  }
+</div>
+</div>

@@ -1,0 +1,19 @@
+.two-column {
+    background-color: #171d2f;
+    padding: 2.75rem 10rem 2.75rem 4rem;
+}
+
+
+@media screen and (max-width: 991px) {
+    #services-section {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .two-column {
+        background-color: #171d2f;
+        padding: 2rem 1rem;
+    }
+}

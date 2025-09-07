@@ -1,0 +1,72 @@
+<div id="fifty_fifty" class="section"
+    [ngClass]="theme">
+    <div class="container-fluid container-lg">
+        <div class="row g-5">
+
+            <div class="col-12 col-lg-6" [ngClass]="{
+  'order-1 order-lg-1': order === 'passive',
+  'order-1 order-lg-2': order === 'dynamic',
+  'ps-lg-5':order === 'dynamic'
+}">
+                <img [src]="fiftyFiftyContent.image ||serviceDetails.image ||'images/hero_img_placeholder.png'"
+                    alt="hero" class="hero-image img-fluid object-fit-cover h-100 w-100" />
+            </div>
+            <div class="col-12 col-lg-6" [ngClass]="{  
+  'order-2 order-lg-2': order === 'passive',
+  'order-2 order-lg-1': order === 'dynamic',
+  'pe-lg-5':order === 'dynamic'
+}">
+                <div class="d-flex flex-column h-100"
+                    [ngClass]="{'justify-content-center': fiftyFiftyContent.image, 'justify-content-start': serviceDetails.image}">
+                    <div class="hero-content" [ngClass]="{ 'text-md-end text-start': contentAlign === 'end' }">
+                        <div>
+                            <p class="first-paragraph mb-4"
+                                [ngClass]="{'mb-1':serviceDetails}">
+                           <a *ngIf="subTopTitle" class="subTopTilte text-decoration-none text-white" [routerLink]="subTopTitle.destination">{{subTopTitle.text}} ></a>     
+                                {{fiftyFiftyContent.topTitle || (serviceDetails && 'Business Website Audit') ||'Enter
+                                Top Title'}}
+                            </p>
+                            <h3 class="hero-heading"
+                                [ngClass]="{'mb-4':serviceDetails}">
+                                {{fiftyFiftyContent.bigTitle || (serviceDetails && 'What We Offer') || 'Enter Big
+                                Title'}}</h3>
+                        </div>
+                        <p class="second-paragraph"
+                            *ngIf="fiftyFiftyContent.description">
+                            {{fiftyFiftyContent.description || serviceDetails.description || 'Enter Description'}}
+                        </p>
+
+                          <p class="second-paragraph"
+                            *ngIf="fiftyFiftyContent.descriptionSecond">
+                            {{fiftyFiftyContent.descriptionSecond || 'Enter Description'}}
+                        </p>
+                         
+                        @if (button) {
+                     <app-button-reusable [customizeBtn]="button"></app-button-reusable>
+                     }
+                        <div id="progress-bars"
+                            *ngIf="fiftyFiftyContent.progressBar && !fiftyFiftyContent.offerService">
+                            <div class="progressBar-container mb-2" *ngFor="let bar of fiftyFiftyContent.progressBar">
+                                <div class="heading-style-h5 mb-2">{{bar.title}}</div>
+                                <div class="progress rounded-0 bg-white" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 11px;">
+
+                                    <div class="progress-bar"
+                                        style="width: 25%; background-color: #bde162; color: #171d2f; font-weight: bolder;"
+                                        [ngStyle]="{'width':`${bar.width}%`}">{{bar.width}}%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ng-container *ngIf="serviceDetails.offerService?.length">
+                            <div *ngFor="let offer of serviceDetails.offerService">
+                                <h4 class="heading-style-h4 mb-3">{{ offer.type }}:</h4>
+                                <p class="text-lighter description">{{ offer.details }}</p>
+                            </div>
+                        </ng-container>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

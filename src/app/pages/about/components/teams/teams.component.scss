@@ -1,0 +1,25 @@
+@media screen and (max-width: 479px) {
+    .expert-name {
+        margin-bottom: 0;
+        font-size: .65rem;
+        line-height: 1.25rem;
+    }
+        .field {
+        font-size: .50rem;
+        line-height: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+     .expert-name{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .field {
+        font-size: .88rem;
+        line-height: 1.13rem;
+    }
+}

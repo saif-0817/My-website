@@ -1,0 +1,30 @@
+.blog-card {
+    overflow: hidden;
+}
+
+.blog-card-image {
+    transition: transform 0.5s ease;
+
+}
+
+.blog-card:hover .blog-card-image {
+    transform: scale(1.1);
+}
+
+.blog-card-readMore {
+    font-size: .9rem;
+
+}
+
+
+@media screen and (max-width:967px) {
+    .qoutes {
+        right: 0 !important;
+        width: 60px !important;
+    }
+
+    .blog-card-readMore {
+        font-size: .9rem;
+    }
+}
+

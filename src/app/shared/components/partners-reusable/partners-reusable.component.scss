@@ -1,0 +1,10 @@
+.partner-image {
+    max-width: 10rem;
+}
+
+
+@media screen and (max-width: 479px) {
+    .partner-image {
+        max-width: 8rem;
+    }
+}

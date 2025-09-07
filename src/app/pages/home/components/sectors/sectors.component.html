@@ -1,0 +1,21 @@
+<div id="sectors" class="section">
+    <div class="container container-xl p-lg-5 p-0">
+        <div class="sector-header mb-5">
+            <p class="top-title text-uppercase text-lighter">
+                Sectors
+            </p>
+            <h2 class="big-title">Our Expertise Across Various Economic Sectors</h2>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col" *ngFor="let sec of sectors">
+                <div class="card rounded-0 position-relative">
+                    <img src={{sec.image}} class="card-img-top rounded-0" alt={{sec.text}}>
+                    <div
+                        class="card-overlay position-absolute top-0 left-0 w-100 h-100 d-flex align-items-end justify-content-center">
+                        <h3 class="heading-style-h3 text-center text-white pb-3">{{sec.text}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

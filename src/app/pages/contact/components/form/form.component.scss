@@ -1,0 +1,13 @@
+.form-control:focus{
+       border-bottom-color:#333;
+    border-left-color:#333;
+    box-shadow: #333 0px 0px 0px 0.103036px;
+    border-right-color:#333;
+    border-top-color:#333;
+}
+
+
+input::placeholder{
+font-size: .8rem;
+opacity: .8;
+}

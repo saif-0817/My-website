@@ -1,0 +1,48 @@
+#services-section {
+    background-color: #edf0f6;
+
+    .small-title {
+        color: #171d2f;
+        opacity: .6;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+
+}
+
+.seeMore-service-description {
+    opacity: .6;
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+}
+
+.allServiceLink {
+    color: #171d2f;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+.allServiceLink:hover {
+    color: #bde162;
+}
+
+
+
+
+.service-icon-img {
+    color: white !important;
+    font-size: xx-large;
+    background-color: #171d2f;
+}
+
+@media screen and (max-width:767px) {
+    #services-section {
+        .card-main-description {
+            line-height: 1.25rem;
+        }
+    }
+
+}

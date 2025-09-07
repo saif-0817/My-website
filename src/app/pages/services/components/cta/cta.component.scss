@@ -1,0 +1,62 @@
+#cta {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-image: url("../../../../../../public/images/cta-banner.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    .knowMore-button {
+        background-color: #bde162;
+        color: #1f2e4b;
+        text-align: center;
+        border: 2px solid #0000;
+        padding: .875rem 2rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.375rem;
+        transition: border-color .4s, color .4s, background-color .4s;
+        border-radius: 0;
+    }
+
+    .knowMore-button:hover {
+        background-color: #1f2e4b;
+        border: 2px solid #bde162;
+        color: #bde162;
+    }
+
+    .center_content_block {
+        text-align: center;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 56.63rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #cta {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .knowMore-button {
+            padding: .625rem 1.25rem;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 991px) {
+    #cta {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}

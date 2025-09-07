@@ -1,0 +1,23 @@
+  <div class="col h-100 text-decoration-none" (click)="srvDtls(serviceCard.offerTitle)" style="cursor: pointer;">
+                <div class="card service-offers p-4 border border-0  rounded-0 h-100 w-100">
+
+                    <div class="card-body h-100 w-100">
+                        <img src="{{serviceCard.offerBlueIcon}}" class="img-fluid svg-blue py-3"
+                            alt="{{serviceCard.offerBlueIcon}}">
+                        <img src="{{serviceCard.offerGreyIcon}}" class="img-fluid svg-grey py-3"
+                            alt="{{serviceCard.offerGreyIcon}}">
+                        <h3 class="heading-style-h3 py-1 px-2 ">{{serviceCard.offerTitle}}</h3>
+                        <p class="card-main-description p-2 h-100">
+                            {{serviceCard.offerDescription}}
+                        </p>
+
+                    </div>
+                    <div class="card-footer bg-white h-100 w-100 d-flex align-items-end">
+                        <button type="button"
+                            class="btn details-btn px-3 py-1 fw-semibold rounded-0 d-inline-flex align-items-center button">
+                            Details <i class="bi bi-arrow-right-short fs-3 fw-bold ms-1"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>

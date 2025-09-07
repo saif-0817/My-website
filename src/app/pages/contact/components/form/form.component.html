@@ -1,0 +1,79 @@
+<div class="section" style="background-color: #edf0f6;">
+    <div class="row g-5">
+        <div class="col-md-5  col-12">
+            <img src="images/form-img.avif" alt="" class="img-fluid h-100 w-100">
+        </div>
+        <div class="col-md-7 col-12 bg-white p-5 p-md-5">
+            <div class="mb-3">
+                <p class="top-title">Business consulting</p>
+                <h2 class="big-title">Get in touch</h2>
+            </div>
+            <form class="row g-4" [formGroup]="contactForm" (submit)="submitHandler()">
+                <div class="col-md-6 col-12">
+                    <label for="fName" class="form-label fw-semibold">First Name</label>
+                    <input type="text" class="form-control rounded-0" id="fName" placeholder="First name"
+                        formControlName="firstName">
+                    <div *ngIf="contactForm.get('firstName')?.invalid 
+         && (contactForm.get('firstName')?.touched || contactForm.get('firstName')?.dirty) && !contactForm.valid"
+                        class="text-danger mt-2">
+                        First Name Required
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="lName" class="form-label fw-semibold">Last Name</label>
+                    <input type="text" class="form-control rounded-0" id="lName" placeholder="Last name"
+                        formControlName="lastName">
+                    <div *ngIf="contactForm.get('lastName')?.invalid 
+         && (contactForm.get('lastName')?.touched || contactForm.get('lastName')?.dirty)&& !contactForm.valid"
+                        class="text-danger mt-2">
+                        Last Name Required
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="phone" class="form-label fw-semibold">Your Phone</label>
+                    <input type="tel" class="form-control rounded-0" id="phone" placeholder="Your phone"
+                        formControlName="phone">
+                    <div *ngIf="contactForm.get('phone')?.invalid 
+         && (contactForm.get('phone')?.touched || contactForm.get('phone')?.dirty)&& !contactForm.valid"
+                        class="text-danger mt-2">
+                        Phone No. Required
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="email" class="form-label fw-semibold">Your Email</label>
+                    <input type="text" class="form-control rounded-0" id="email" placeholder="Your email"
+                        formControlName="email">
+                    <div *ngIf="contactForm.get('email')?.invalid 
+         && (contactForm.get('email')?.touched || contactForm.get('email')?.dirty) && !contactForm.valid"
+                        class="text-danger mt-2">
+                        Email Required
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="subject" class="form-label fw-semibold">Subject</label>
+                    <input type="text" class="form-control rounded-0" id="subject" placeholder="Example Text"
+                        formControlName="subject">
+                    <div *ngIf="contactForm.get('subject')?.invalid 
+         && (contactForm.get('subject')?.touched || contactForm.get('subject')?.dirty)&& !contactForm.valid"
+                        class="text-danger mt-2">
+                        Subject Required
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label fw-semibold">Your Message</label>
+                    <input type="text" class="form-control rounded-0" id="message" placeholder="Your Message"
+                        formControlName="message">
+                    <div *ngIf="contactForm.get('message')?.invalid 
+         && (contactForm.get('message')?.touched || contactForm.get('message')?.dirty) && !contactForm.valid"
+                        class="text-danger mt-2">
+                        Message Required
+                    </div>
+                </div>
+                <div class="col-12">
+                    <app-button-reusable [customizeBtn]="button"></app-button-reusable>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

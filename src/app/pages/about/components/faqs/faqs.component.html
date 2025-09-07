@@ -1,0 +1,27 @@
+<div class="section position-relative" id="faqs">
+    
+        <div class="text-center mb-5 top-header position-relative">
+            <p class="top-title text-darker">Faq</p>
+            <h2 class="big-title text-white">Frequently asked question</h2>
+        </div>
+        <div class="card p-1 p-md-5 rounded-0">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                @for (pnl of panel; track $index) {
+                <button class="accordion-button collapsed fs-5 fw-medium border-bottom mb-4" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#' + pnl.id" [attr.aria-controls]="pnl.id" aria-expanded="false">
+                  {{ pnl.header }}
+                </button>
+
+                <div [id]="pnl.id" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-lighter">
+                        {{ pnl.content }}
+                    </div>
+                </div>
+
+                }
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+

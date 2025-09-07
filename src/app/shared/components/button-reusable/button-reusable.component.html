@@ -1,0 +1,8 @@
+<button 
+  [type]="customizeBtn.btnType || 'button'" 
+  class="btn button flex-shrink knowMore-button"
+  [ngClass]="customizeBtn.btnClass"
+  (click)="customizeBtn.handler?.()">
+  {{ customizeBtn.btnTxt || 'ENTER BUTTON TEXT' }}
+</button>
+ 

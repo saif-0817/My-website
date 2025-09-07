@@ -1,0 +1,26 @@
+<div id="two-columns">
+
+    <div class="row gx-0">
+        <div class="col-12 col-lg-6">
+            <img src="images/team_discussion.avif" alt="" class="img-fluid object-fit-cover h-100 w-100">
+        </div>
+        <div class="col-12 col-lg-6 two-column">
+            <div class="two-column-content">
+                <div class="top-title text-darker">ADVICE</div>
+                <h2 class="heading-style-h2 text-white mt-3">Focused Strategies for Financial Success and Growth</h2>
+            </div>
+
+            <div class="d-flex flex-column mt-lg-5 mt-3">
+                <div class="d-flex my-2" *ngFor="let advice of advices">
+                    <div class="icon-container text-center">
+                        <img src={{advice.icon}} alt={{advice.title}} class="pe-4 pt-1">
+                    </div>
+                    <div class="content-container">
+                        <h3 class="heading-style-h3 text-white">{{advice.title}}</h3>
+                        <p class="title-description text-white opacity-75">{{advice.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
