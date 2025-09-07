@@ -6,8 +6,8 @@ import { LatestNewsComponent } from './components/latest-news/latest-news.compon
 @Component({
   selector: 'app-blogs',
   imports: [HeroComponent, LatestNewsComponent],
-  templateUrl: './blogs.Page.html',
-  styleUrl: './blogs.Page.scss'
+  templateUrl: './blogs.page.html',
+  styleUrl: './blogs.page.scss'
 })
 export class BlogsPage {
 

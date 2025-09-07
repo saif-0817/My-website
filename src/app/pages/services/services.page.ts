@@ -12,8 +12,8 @@ import { HeroComponent } from "./components/hero/hero.component";
 @Component({
   selector: 'app-services-page',
   imports: [ServicesComponent, TitleCenterReusableComponent, FiftyFiftyComponent, PartnersComponent, VideoComponent, LatestNewsComponent, CtaComponent, HeroComponent],
-  templateUrl: './services.Page.html',
-  styleUrl: './services.Page.scss'
+  templateUrl: './services.page.html',
+  styleUrl: './services.page.scss'
 })
 export class ServicesPage {
  
