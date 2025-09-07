@@ -22,6 +22,7 @@ export const routes: Routes = [
             },
              {
                 path: 'services/:slug', component: ServiceDetailsComponent, title:'service-details' ,
+                 data: { renderMode: 'SSR' }
             },
             {
                 path: 'about', component: AboutPage, title:'about'
@@ -30,7 +31,8 @@ export const routes: Routes = [
                 path: 'blogs', component: BlogsPage, title:'blogs'
             },
              {
-                path: 'post/:slug', component: BlogPostComponent, title:'post'
+                path: 'post/:slug', component: BlogPostComponent, title:'post',
+                 data: { renderMode: 'SSR' }
             },
             {
                 path: 'contact', component: ContactPage, title:'contact'
