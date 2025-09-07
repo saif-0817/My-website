@@ -7,6 +7,7 @@ import { BlogsPage } from './pages/blogs/blogs.page';
 import { ContactPage } from './pages/contact/contact.page';
 import { ServiceDetailsComponent } from './pages/services/page/service-details/service-details.component';
 import { BlogPostComponent } from './pages/blogs/pages/blog-post/blog-post.component';
+import { RenderMode } from '@angular/ssr';
 
 
 
@@ -23,6 +24,9 @@ export const routes: Routes = [
             },
              {
                 path: 'services/:srv', component: ServiceDetailsComponent, title:'service-details' ,
+                data:{
+                    renderMode: RenderMode.Prerender,
+                }
             },
             {
                 path: 'about', component: AboutPage, title:'about'
@@ -32,6 +36,9 @@ export const routes: Routes = [
             },
              {
                 path: 'post/:blog', component: BlogPostComponent, title:'post',
+                 data:{
+                    renderMode: RenderMode.Prerender,
+                }
                  
             },
             {
