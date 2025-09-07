@@ -8,13 +8,6 @@ import { ContactPage } from './pages/contact/contact.page';
 import { ServiceDetailsComponent } from './pages/services/page/service-details/service-details.component';
 import { BlogPostComponent } from './pages/blogs/pages/blog-post/blog-post.component';
 
-export async function getPrerenderParams() {
-  return [
-    { slug: 'Business Website Audit' },
-    { slug: 'Zeal Consulting Expands Services with New Sustainability Consulting Division' },
-    
-  ];
-}
 
 
 export const routes: Routes = [
