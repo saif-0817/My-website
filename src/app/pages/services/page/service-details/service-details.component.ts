@@ -20,7 +20,7 @@ export class ServiceDetailsComponent {
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(params => {
-      const slug = params.get('slug')?.replaceAll(' ', '').toLocaleLowerCase(); // ✅ works
+      const slug = params.get('srv')?.replaceAll(' ', '').toLocaleLowerCase(); // ✅ works
       console.log(slug);
       this.service = this.srvDtls.getService(slug!);
 
